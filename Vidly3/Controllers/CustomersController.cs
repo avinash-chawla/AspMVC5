@@ -23,8 +23,10 @@ namespace Vidly3.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            IEnumerable<Customer> customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            //IEnumerable<Customer> customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            //return View(customers);
+
+            return View();
         }
 
         public ActionResult New()
